@@ -119,6 +119,4 @@ This creates the following:
  * Self closing tags
  * Fix comment placement
  * Boolean attributes
- * Parsing abilities
-  
-  
+ * HTML parsing

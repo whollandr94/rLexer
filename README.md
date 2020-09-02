@@ -1,6 +1,3 @@
-# Release Date: 07/09/2020
-
-
 # rLexer | HTML Lexer
 
 A simple HTML lexer/tokenizer written in Ruby.

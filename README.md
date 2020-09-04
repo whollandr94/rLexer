@@ -34,7 +34,7 @@ This generates the following n-dimensional array:
 Comments are handled as shown below:
 
 ```ruby
-require rLexer
+require 'rLexer'
 
 html = '<html><head><title><!--Hello, World!</title></head></html>'
 
@@ -56,7 +56,7 @@ This will results in:
 Closed comments work as follows:
 
 ```ruby
-require rLexer
+require 'rLexer'
 
 html = '<html><head><title><!--Hello, World!--></title></head></html>'
 
@@ -83,7 +83,7 @@ Which will result in:
 Attributes are stored in the n-dimensional array directly after the tag that contains them in an array of its own.
 
 ```ruby
-require rLexer
+require 'rLexer'
 
 html = '<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>Hello, World!</title></head></html>'
 

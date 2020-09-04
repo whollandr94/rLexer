@@ -1,8 +1,24 @@
-# rLexer | HTML Lexer
+# rLexer
 
 A simple HTML lexer/tokenizer written in Ruby.
 
-## Using rLexer
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'rLexer'
+```
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
+
+    $ gem install rLexer
+
+## Usage
 
 The values returned from rLexer is a n-dimensional array which contains the token type and the data. See example below
 
@@ -120,3 +136,7 @@ This creates the following:
  * Fix comment placement
  * Boolean attributes
  * HTML parsing
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

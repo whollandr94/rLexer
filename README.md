@@ -4,17 +4,7 @@ A simple HTML lexer/tokenizer written in Ruby.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'rLexer'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
+Open console and run
 
     $ gem install rLexer
 

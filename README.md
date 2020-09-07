@@ -116,10 +116,10 @@ This creates the following:
   * HTML Doctype not supported
   * Style and Script tag act as regular tags - Any text inside will be treated as data
   * Self closing tags not supported
-  * Comments can't occur in the middle of a tag: 
+  * Comments can't occur in the middle of a tag:
     * <tit &lt;!-- --&gt;le> will result in [:OPEN, "<tit &lt;!-- --&gt;le>"]
   * Boolean attributes not supported (readonly, disabled)
-  
+
 ## Coming Soon
  * Doctype support
  * Self closing tags

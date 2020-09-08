@@ -5,6 +5,7 @@ class Tokenizer
 
   def initialize(html)
     @html = html.gsub('"', '\'')
+    @html.strip!
     @type = :EOF
     @tokens = []
   end
@@ -62,7 +63,14 @@ class Tokenizer
 
   def consume_tag(idx)
     slice = @html[idx..-1]
-    slice = slice[tag_index(slice)..slice.index(Tags::CLOSE_TAG) -1]
+
+    if slice.index(Tags::CLOSE_TAG).nil?
+      index = -1
+    else
+      index = slice.index(Tags::CLOSE_TAG) - 1
+    end
+
+    slice = slice[tag_index(slice)..index]
     set_token(slice)
   end
 
@@ -86,8 +94,7 @@ class Tokenizer
     return if next_char?(idx)
 
     slice = @html[idx..-1]
-    slice = slice[Tags::CLOSE_TAG.length..slice.index(Tags::OPEN_TAG) -1]
-    slice.strip!
+    slice = slice[Tags::CLOSE_TAG.length..slice.index(Tags::OPEN_TAG) || slice.length]
 
     set_token(slice) unless slice == ''
   end

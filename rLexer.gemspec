@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "rLexer"
-  spec.version       = '0.1.12'
+  spec.version       = '0.1.13'
   spec.authors       = ["Robert Holland"]
   spec.email         = ["rlexerdevelopment@gmail.com"]
 
